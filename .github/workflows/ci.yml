@@ -22,9 +22,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Style
-        run: npm run test -- --coverage
-      - name: Run format:check
+  style:
+    name: Style
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check formatting
         run: npm run format:check
-      - name: Run format:write
-        run: npm run format:write
