@@ -24,4 +24,7 @@ jobs:
 
       - name: Run unit tests
         run: npm run test -- --coverage
-      #efsdfdsfdsfds
+      - name: Run format:check
+        run: npm run format:check
+      - name: Run format:write
+        run: npm run format:write
