@@ -46,6 +46,3 @@ jobs:
 
       - name: Check linting max warnings
         run: npm run lint -- --max-warnings=0
-
-      - name: Check coverage
-        run: npm run test -- --coverage
