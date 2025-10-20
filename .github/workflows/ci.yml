@@ -48,4 +48,7 @@ jobs:
         run: npm run lint -- --max-warnings=0
 
       - name: Check coverage
-        run: npm run test -- --coverage
+        run: npm run test
+
+      - name: Run build
+        run: npm run build
