@@ -1,15 +1,5 @@
-@'
-node_modules
-npm-debug.log
-yarn.lock
-pnpm-lock.yaml
-.git
-.gitignore
-.vscode
-dist
-build
-coverage
-*.log
+node_modules/
+coverage/
+dist/
 .env
-.env.*
-'@ | Set-Content -Encoding UTF8 .dockerignore
+.vscode
